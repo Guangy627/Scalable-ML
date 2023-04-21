@@ -1,0 +1,95 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/02/18 06:31:24 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/02/18 06:31:31 INFO SparkContext: Running Spark version 3.0.1
+21/02/18 06:31:31 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/18 06:31:31 INFO ResourceUtils: ==============================================================
+21/02/18 06:31:31 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/18 06:31:31 INFO ResourceUtils: ==============================================================
+21/02/18 06:31:31 INFO SparkContext: Submitted application: Lab 2 Exercise
+21/02/18 06:31:32 INFO SecurityManager: Changing view acls to: acq18mc
+21/02/18 06:31:32 INFO SecurityManager: Changing modify acls to: acq18mc
+21/02/18 06:31:32 INFO SecurityManager: Changing view acls groups to: 
+21/02/18 06:31:32 INFO SecurityManager: Changing modify acls groups to: 
+21/02/18 06:31:32 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acq18mc); groups with view permissions: Set(); users  with modify permissions: Set(acq18mc); groups with modify permissions: Set()
+21/02/18 06:31:33 INFO Utils: Successfully started service 'sparkDriver' on port 34327.
+21/02/18 06:31:33 INFO SparkEnv: Registering MapOutputTracker
+21/02/18 06:31:33 INFO SparkEnv: Registering BlockManagerMaster
+21/02/18 06:31:33 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/18 06:31:33 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/18 06:31:33 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/18 06:31:33 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acq18mc/blockmgr-84bd3089-c9a3-4c23-83a2-e56555abff74
+21/02/18 06:31:33 INFO MemoryStore: MemoryStore started with capacity 408.9 MiB
+21/02/18 06:31:33 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/18 06:31:34 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/18 06:31:34 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node173.shef.ac.uk:4040
+21/02/18 06:31:34 INFO Executor: Starting executor ID driver on host sharc-node173.shef.ac.uk
+21/02/18 06:31:34 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41817.
+21/02/18 06:31:34 INFO NettyBlockTransferService: Server created on sharc-node173.shef.ac.uk:41817
+21/02/18 06:31:34 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/18 06:31:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 41817, None)
+21/02/18 06:31:34 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node173.shef.ac.uk:41817 with 408.9 MiB RAM, BlockManagerId(driver, sharc-node173.shef.ac.uk, 41817, None)
+21/02/18 06:31:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 41817, None)
+21/02/18 06:31:34 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node173.shef.ac.uk, 41817, None)
+21/02/18 06:31:36 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/acq18mc/com6012-2021/ScalableML/HPC/spark-warehouse').
+21/02/18 06:31:36 INFO SharedState: Warehouse path is 'file:/home/acq18mc/com6012-2021/ScalableML/HPC/spark-warehouse'.
++-------------------------------------------------------------------------------------------------------------------------------+
+|value                                                                                                                          |
++-------------------------------------------------------------------------------------------------------------------------------+
+|in24.inetnebr.com - - [01/Aug/1995:00:00:01 -0400] "GET /shuttle/missions/sts-68/news/sts-68-mcc-05.txt HTTP/1.0" 200 1839     |
+|uplherc.upl.com - - [01/Aug/1995:00:00:07 -0400] "GET / HTTP/1.0" 304 0                                                        |
+|uplherc.upl.com - - [01/Aug/1995:00:00:08 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 304 0                               |
+|uplherc.upl.com - - [01/Aug/1995:00:00:08 -0400] "GET /images/MOSAIC-logosmall.gif HTTP/1.0" 304 0                             |
+|uplherc.upl.com - - [01/Aug/1995:00:00:08 -0400] "GET /images/USA-logosmall.gif HTTP/1.0" 304 0                                |
+|ix-esc-ca2-07.ix.netcom.com - - [01/Aug/1995:00:00:09 -0400] "GET /images/launch-logo.gif HTTP/1.0" 200 1713                   |
+|uplherc.upl.com - - [01/Aug/1995:00:00:10 -0400] "GET /images/WORLD-logosmall.gif HTTP/1.0" 304 0                              |
+|slppp6.intermind.net - - [01/Aug/1995:00:00:10 -0400] "GET /history/skylab/skylab.html HTTP/1.0" 200 1687                      |
+|piweba4y.prodigy.com - - [01/Aug/1995:00:00:10 -0400] "GET /images/launchmedium.gif HTTP/1.0" 200 11853                        |
+|slppp6.intermind.net - - [01/Aug/1995:00:00:11 -0400] "GET /history/skylab/skylab-small.gif HTTP/1.0" 200 9202                 |
+|slppp6.intermind.net - - [01/Aug/1995:00:00:12 -0400] "GET /images/ksclogosmall.gif HTTP/1.0" 200 3635                         |
+|ix-esc-ca2-07.ix.netcom.com - - [01/Aug/1995:00:00:12 -0400] "GET /history/apollo/images/apollo-logo1.gif HTTP/1.0" 200 1173   |
+|slppp6.intermind.net - - [01/Aug/1995:00:00:13 -0400] "GET /history/apollo/images/apollo-logo.gif HTTP/1.0" 200 3047           |
+|uplherc.upl.com - - [01/Aug/1995:00:00:14 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 304 0                               |
+|133.43.96.45 - - [01/Aug/1995:00:00:16 -0400] "GET /shuttle/missions/sts-69/mission-sts-69.html HTTP/1.0" 200 10566            |
+|kgtyk4.kj.yamagata-u.ac.jp - - [01/Aug/1995:00:00:17 -0400] "GET / HTTP/1.0" 200 7280                                          |
+|kgtyk4.kj.yamagata-u.ac.jp - - [01/Aug/1995:00:00:18 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 200 5866                 |
+|d0ucr6.fnal.gov - - [01/Aug/1995:00:00:19 -0400] "GET /history/apollo/apollo-16/apollo-16.html HTTP/1.0" 200 2743              |
+|ix-esc-ca2-07.ix.netcom.com - - [01/Aug/1995:00:00:19 -0400] "GET /shuttle/resources/orbiters/discovery.html HTTP/1.0" 200 6849|
+|d0ucr6.fnal.gov - - [01/Aug/1995:00:00:20 -0400] "GET /history/apollo/apollo-16/apollo-16-patch-small.gif HTTP/1.0" 200 14897  |
++-------------------------------------------------------------------------------------------------------------------------------+
+only showing top 20 rows
+
++---------------------------+--------------------------+----------------------------------------------------------------+---------------+------------------+
+|host                       |timestamp                 |request                                                         |HTTP reply code|bytes in the reply|
++---------------------------+--------------------------+----------------------------------------------------------------+---------------+------------------+
+|in24.inetnebr.com          |01/Aug/1995:00:00:01 -0400|GET /shuttle/missions/sts-68/news/sts-68-mcc-05.txt HTTP/1.0    |200            |1839              |
+|uplherc.upl.com            |01/Aug/1995:00:00:07 -0400|GET / HTTP/1.0                                                  |304            |0                 |
+|uplherc.upl.com            |01/Aug/1995:00:00:08 -0400|GET /images/ksclogo-medium.gif HTTP/1.0                         |304            |0                 |
+|uplherc.upl.com            |01/Aug/1995:00:00:08 -0400|GET /images/MOSAIC-logosmall.gif HTTP/1.0                       |304            |0                 |
+|uplherc.upl.com            |01/Aug/1995:00:00:08 -0400|GET /images/USA-logosmall.gif HTTP/1.0                          |304            |0                 |
+|ix-esc-ca2-07.ix.netcom.com|01/Aug/1995:00:00:09 -0400|GET /images/launch-logo.gif HTTP/1.0                            |200            |1713              |
+|uplherc.upl.com            |01/Aug/1995:00:00:10 -0400|GET /images/WORLD-logosmall.gif HTTP/1.0                        |304            |0                 |
+|slppp6.intermind.net       |01/Aug/1995:00:00:10 -0400|GET /history/skylab/skylab.html HTTP/1.0                        |200            |1687              |
+|piweba4y.prodigy.com       |01/Aug/1995:00:00:10 -0400|GET /images/launchmedium.gif HTTP/1.0                           |200            |11853             |
+|slppp6.intermind.net       |01/Aug/1995:00:00:11 -0400|GET /history/skylab/skylab-small.gif HTTP/1.0                   |200            |9202              |
+|slppp6.intermind.net       |01/Aug/1995:00:00:12 -0400|GET /images/ksclogosmall.gif HTTP/1.0                           |200            |3635              |
+|ix-esc-ca2-07.ix.netcom.com|01/Aug/1995:00:00:12 -0400|GET /history/apollo/images/apollo-logo1.gif HTTP/1.0            |200            |1173              |
+|slppp6.intermind.net       |01/Aug/1995:00:00:13 -0400|GET /history/apollo/images/apollo-logo.gif HTTP/1.0             |200            |3047              |
+|uplherc.upl.com            |01/Aug/1995:00:00:14 -0400|GET /images/NASA-logosmall.gif HTTP/1.0                         |304            |0                 |
+|133.43.96.45               |01/Aug/1995:00:00:16 -0400|GET /shuttle/missions/sts-69/mission-sts-69.html HTTP/1.0       |200            |10566             |
+|kgtyk4.kj.yamagata-u.ac.jp |01/Aug/1995:00:00:17 -0400|GET / HTTP/1.0                                                  |200            |7280              |
+|kgtyk4.kj.yamagata-u.ac.jp |01/Aug/1995:00:00:18 -0400|GET /images/ksclogo-medium.gif HTTP/1.0                         |200            |5866              |
+|d0ucr6.fnal.gov            |01/Aug/1995:00:00:19 -0400|GET /history/apollo/apollo-16/apollo-16.html HTTP/1.0           |200            |2743              |
+|ix-esc-ca2-07.ix.netcom.com|01/Aug/1995:00:00:19 -0400|GET /shuttle/resources/orbiters/discovery.html HTTP/1.0         |200            |6849              |
+|d0ucr6.fnal.gov            |01/Aug/1995:00:00:20 -0400|GET /history/apollo/apollo-16/apollo-16-patch-small.gif HTTP/1.0|200            |14897             |
++---------------------------+--------------------------+----------------------------------------------------------------+---------------+------------------+
+only showing top 20 rows
+
+==================== Question 2 ====================
+There are 75060 unique hosts
+====================================================
+==================== Question 3 ====================
+The most frequently visited host is edams.ksc.nasa.gov
+====================================================

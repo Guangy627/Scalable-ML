@@ -1,0 +1,126 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/02/18 06:32:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/02/18 06:32:10 INFO SparkContext: Running Spark version 3.0.1
+21/02/18 06:32:10 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/02/18 06:32:10 INFO ResourceUtils: ==============================================================
+21/02/18 06:32:10 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/18 06:32:10 INFO ResourceUtils: ==============================================================
+21/02/18 06:32:10 INFO SparkContext: Submitted application: Lab 2 Exercise
+21/02/18 06:32:10 INFO SecurityManager: Changing view acls to: acq18mc
+21/02/18 06:32:10 INFO SecurityManager: Changing modify acls to: acq18mc
+21/02/18 06:32:10 INFO SecurityManager: Changing view acls groups to: 
+21/02/18 06:32:10 INFO SecurityManager: Changing modify acls groups to: 
+21/02/18 06:32:10 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acq18mc); groups with view permissions: Set(); users  with modify permissions: Set(acq18mc); groups with modify permissions: Set()
+21/02/18 06:32:11 INFO Utils: Successfully started service 'sparkDriver' on port 37300.
+21/02/18 06:32:11 INFO SparkEnv: Registering MapOutputTracker
+21/02/18 06:32:11 INFO SparkEnv: Registering BlockManagerMaster
+21/02/18 06:32:11 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/18 06:32:11 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/18 06:32:11 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/18 06:32:11 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acq18mc/blockmgr-0ddc0850-99a1-40e5-b9af-f3b27a171e70
+21/02/18 06:32:11 INFO MemoryStore: MemoryStore started with capacity 408.9 MiB
+21/02/18 06:32:11 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/18 06:32:11 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/02/18 06:32:11 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+21/02/18 06:32:11 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node173.shef.ac.uk:4041
+21/02/18 06:32:11 INFO Executor: Starting executor ID driver on host sharc-node173.shef.ac.uk
+21/02/18 06:32:11 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44807.
+21/02/18 06:32:11 INFO NettyBlockTransferService: Server created on sharc-node173.shef.ac.uk:44807
+21/02/18 06:32:11 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/18 06:32:11 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 44807, None)
+21/02/18 06:32:11 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node173.shef.ac.uk:44807 with 408.9 MiB RAM, BlockManagerId(driver, sharc-node173.shef.ac.uk, 44807, None)
+21/02/18 06:32:11 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 44807, None)
+21/02/18 06:32:11 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node173.shef.ac.uk, 44807, None)
+21/02/18 06:32:12 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/acq18mc/com6012-2021/ScalableML/HPC/spark-warehouse').
+21/02/18 06:32:12 INFO SharedState: Warehouse path is 'file:/home/acq18mc/com6012-2021/ScalableML/HPC/spark-warehouse'.
+21/02/18 06:32:17 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , TV, radio, newspaper, sales
+ Schema: _c0, TV, radio, newspaper, sales
+Expected: _c0 but found: 
+CSV file: file:///home/acq18mc/com6012-2021/ScalableML/Data/Advertising.csv
++---+-----+-----+---------+-----+
+|_c0|   TV|radio|newspaper|sales|
++---+-----+-----+---------+-----+
+|  1|230.1| 37.8|     69.2| 22.1|
+|  2| 44.5| 39.3|     45.1| 10.4|
+|  3| 17.2| 45.9|     69.3|  9.3|
+|  4|151.5| 41.3|     58.5| 18.5|
+|  5|180.8| 10.8|     58.4| 12.9|
+|  6|  8.7| 48.9|     75.0|  7.2|
+|  7| 57.5| 32.8|     23.5| 11.8|
+|  8|120.2| 19.6|     11.6| 13.2|
+|  9|  8.6|  2.1|      1.0|  4.8|
+| 10|199.8|  2.6|     21.2| 10.6|
+| 11| 66.1|  5.8|     24.2|  8.6|
+| 12|214.7| 24.0|      4.0| 17.4|
+| 13| 23.8| 35.1|     65.9|  9.2|
+| 14| 97.5|  7.6|      7.2|  9.7|
+| 15|204.1| 32.9|     46.0| 19.0|
+| 16|195.4| 47.7|     52.9| 22.4|
+| 17| 67.8| 36.6|    114.0| 12.5|
+| 18|281.4| 39.6|     55.8| 24.4|
+| 19| 69.2| 20.5|     18.3| 11.3|
+| 20|147.3| 23.9|     19.1| 14.6|
++---+-----+-----+---------+-----+
+only showing top 20 rows
+
+21/02/18 06:32:22 WARN Instrumentation: [5a28f730] regParam is zero, which might cause numerical instability and overfitting.
+21/02/18 06:32:22 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+21/02/18 06:32:22 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+21/02/18 06:32:22 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+21/02/18 06:32:22 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
++---------------+-----+------------------+
+|       features|label|        prediction|
++---------------+-----+------------------+
+| [4.1,11.6,5.7]|  3.2| 5.199020385877647|
+|[7.3,28.1,41.4]|  5.5| 8.582319425767764|
+| [8.4,27.2,2.1]|  5.7| 8.420686684670754|
+|  [8.6,2.1,1.0]|  4.8|3.5527060385537146|
+|[8.7,48.9,75.0]|  7.2|12.717573830866964|
++---------------+-----+------------------+
+only showing top 5 rows
+
+model reg param 0.0
+Root Mean Squared Error (RMSE) on test data = 1.56202
++---------------+-----+------------------+
+|       features|label|        prediction|
++---------------+-----+------------------+
+| [4.1,11.6,5.7]|  3.2|5.3505892461838425|
+|[7.3,28.1,41.4]|  5.5| 8.699808122820894|
+| [8.4,27.2,2.1]|  5.7| 8.494911583548555|
+|  [8.6,2.1,1.0]|  4.8| 3.736871362212104|
+|[8.7,48.9,75.0]|  7.2|12.781038337472987|
++---------------+-----+------------------+
+only showing top 5 rows
+
+model reg param 0.1
+Root Mean Squared Error (RMSE) on test data = 1.56273
++---------------+-----+------------------+
+|       features|label|        prediction|
++---------------+-----+------------------+
+| [4.1,11.6,5.7]|  3.2| 5.497032887072753|
+|[7.3,28.1,41.4]|  5.5| 8.812335981831822|
+| [8.4,27.2,2.1]|  5.7| 8.568023192940647|
+|  [8.6,2.1,1.0]|  4.8| 3.914425602184287|
+|[8.7,48.9,75.0]|  7.2|12.840818699956586|
++---------------+-----+------------------+
+only showing top 5 rows
+
+model reg param 0.2
+Root Mean Squared Error (RMSE) on test data = 1.57017
++---------------+-----+------------------+
+|       features|label|        prediction|
++---------------+-----+------------------+
+| [4.1,11.6,5.7]|  3.2| 5.908078198976107|
+|[7.3,28.1,41.4]|  5.5| 9.123155694782715|
+| [8.4,27.2,2.1]|  5.7|  8.78008781836043|
+|  [8.6,2.1,1.0]|  4.8| 4.410949582626823|
+|[8.7,48.9,75.0]|  7.2|13.000705743409572|
++---------------+-----+------------------+
+only showing top 5 rows
+
+model reg param 0.5
+Root Mean Squared Error (RMSE) on test data = 1.62385
