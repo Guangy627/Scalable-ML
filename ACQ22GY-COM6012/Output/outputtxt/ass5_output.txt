@@ -1,0 +1,180 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+23/05/04 08:43:20 INFO SparkContext: Running Spark version 3.3.1
+23/05/04 08:43:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/05/04 08:43:20 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+23/05/04 08:43:20 INFO ResourceUtils: ==============================================================
+23/05/04 08:43:20 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/05/04 08:43:20 INFO ResourceUtils: ==============================================================
+23/05/04 08:43:20 INFO SparkContext: Submitted application: NIPS_PCA
+23/05/04 08:43:20 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 16384, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/05/04 08:43:20 INFO ResourceProfile: Limiting resource is cpu
+23/05/04 08:43:20 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/05/04 08:43:20 INFO SecurityManager: Changing view acls to: acq22gy
+23/05/04 08:43:20 INFO SecurityManager: Changing modify acls to: acq22gy
+23/05/04 08:43:20 INFO SecurityManager: Changing view acls groups to: 
+23/05/04 08:43:20 INFO SecurityManager: Changing modify acls groups to: 
+23/05/04 08:43:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acq22gy); groups with view permissions: Set(); users  with modify permissions: Set(acq22gy); groups with modify permissions: Set()
+23/05/04 08:43:21 INFO Utils: Successfully started service 'sparkDriver' on port 38684.
+23/05/04 08:43:21 INFO SparkEnv: Registering MapOutputTracker
+23/05/04 08:43:21 INFO SparkEnv: Registering BlockManagerMaster
+23/05/04 08:43:21 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/05/04 08:43:21 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/05/04 08:43:21 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/05/04 08:43:21 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acq22gy/blockmgr-a96bfa95-4239-4c9c-9d55-23195dc9b0b2
+23/05/04 08:43:21 INFO MemoryStore: MemoryStore started with capacity 16.9 GiB
+23/05/04 08:43:21 INFO SparkEnv: Registering OutputCommitCoordinator
+23/05/04 08:43:22 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/05/04 08:43:22 INFO Executor: Starting executor ID driver on host sharc-node112.shef.ac.uk
+23/05/04 08:43:22 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/05/04 08:43:22 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37537.
+23/05/04 08:43:22 INFO NettyBlockTransferService: Server created on sharc-node112.shef.ac.uk:37537
+23/05/04 08:43:22 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/05/04 08:43:22 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node112.shef.ac.uk, 37537, None)
+23/05/04 08:43:22 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node112.shef.ac.uk:37537 with 16.9 GiB RAM, BlockManagerId(driver, sharc-node112.shef.ac.uk, 37537, None)
+23/05/04 08:43:22 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node112.shef.ac.uk, 37537, None)
+23/05/04 08:43:22 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node112.shef.ac.uk, 37537, None)
+23/05/04 08:43:59 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
++---+------------------+-------------------+--------------------+------------------+-------------------+------------------+-------------------+--------------------+------------------+------------------+-------------------+--------------------+-----------------+------------------+--------------------+-------------------+-----------------+------------------+--------------------+--------------------+-----------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+|_c0|               _c1|                _c2|                 _c3|               _c4|                _c5|               _c6|                _c7|                 _c8|               _c9|              _c10|               _c11|                _c12|             _c13|              _c14|                _c15|               _c16|             _c17|              _c18|                _c19|                _c20|             _c21|               _c22|              _c23|              _c24|              _c25|              _c26|              _c27|              _c28|
++---+------------------+-------------------+--------------------+------------------+-------------------+------------------+-------------------+--------------------+------------------+------------------+-------------------+--------------------+-----------------+------------------+--------------------+-------------------+-----------------+------------------+--------------------+--------------------+-----------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+|1.0|0.5056540966033936|-0.6905980110168457|-0.13784652948379517|0.8618450164794922|  1.572936773300171|0.6351128816604614|-0.8337990641593933|  0.6964563131332397|2.1730761528015137|0.7214270234107971| 1.9233801364898682| -1.3528810739517212|              0.0|1.3965407609939575|  0.9513826966285706|-0.5016783475875854|2.548224449157715|0.7457994818687439|   2.317286491394043| -1.3997551202774048|              0.0| 0.9627102017402649|0.9157748222351074|0.9866490364074707|0.6994079351425171|1.6451621055603027|1.2242017984390259| 1.270220398902893|
+|1.0|1.1511272192001343| 0.5015397667884827| -1.6110061407089233|0.9458346366882324| 1.0061317682266235|0.8280376195907593|0.32873088121414185| -0.9556875824928284|               0.0|2.2570719718933105| 0.3225563168525696|-0.15832965075969696|              0.0|1.8607079982757568|  0.4207077920436859|  1.181491732597351|2.548224449157715|1.3209706544876099|  1.1763185262680054|  1.7428174018859863|3.101961374282837|  0.766460120677948|0.8353355526924133|1.0195233821868896|0.6604227423667908|0.8280760645866394|0.8032395839691162|0.7131282091140747|
+|1.0|0.8467831015586853| 0.0924728736281395|    1.01747727394104|0.7495587468147278|-0.8537809252738953|0.7347815036773682|-0.5119743347167969|-0.45452946424484253|1.0865380764007568|1.0793707370758057|0.17490753531455994|  1.6044672727584839|              0.0| 1.518070936203003| 0.05751856043934822|0.23123016953468323|2.548224449157715|1.1483949422836304|-0.39272046089172363| -1.3786684274673462|              0.0| 0.7971286773681641|1.1403526067733765|1.0964661836624146|0.8118401169776917|0.8550260663032532|0.9289512038230896|0.7918393611907959|
+|1.0| 1.551551103591919| 1.0041077136993408| -0.6017134189605713|1.0215402841567993|-1.3841110467910767|0.9856020212173462|-1.7418397665023804|  0.9076732397079468|               0.0| 1.046509861946106|0.33324143290519714|-0.31978511810302734|              0.0| 2.378790855407715|  1.0788174867630005| 1.5964337587356567|2.548224449157715|1.7625112533569336| 0.23439544439315796| 0.19350285828113556|              0.0| 0.7914921045303345|0.8316180109977722|1.1290690898895264|1.1877528429031372|1.0527535676956177|1.0998433828353882|0.9854301810264587|
+|1.0|0.4103063941001892|-1.7668334245681763| -0.2710132598876953|1.3015755414962769| 0.3970358371734619|  0.78525710105896|-1.1239362955093384|  0.6498887538909912|2.1730761528015137|1.0723201036453247|-0.8110367059707642|  -1.673017978668213|              0.0| 0.520014762878418|0.035672593861818314|-0.9671034812927246|              0.0|1.1717619895935059| -0.6842085719108582| -0.5612829923629761|3.101961374282837|  0.854182779788971|1.1422392129898071|0.9918690323829651|0.6724052429199219|0.9149858355522156| 0.781499981880188|0.7400307059288025|
+|1.0|0.7464941143989563| 0.5969886779785156| 0.07199368625879288|0.7180958986282349| 0.9526070952415466|0.5059466361999512|-1.2120667695999146| 0.08608905225992203|2.1730761528015137|0.8668455481529236|-0.9431435465812683| -1.2901853322982788|2.214872121810913| 0.664726734161377| -0.7617052793502808|  1.255271553993225|              0.0|0.3699788749217987| -1.1955621242523193| -1.1716862916946411|              0.0|  0.551410973072052| 0.586721658706665| 0.984693706035614|1.4225554466247559|0.9300291538238525|1.1556456089019775|0.9077768325805664|
+|1.0|1.0327203273773193| 0.7537976503372192|   0.665695309638977|0.4816540479660034| 1.6774777173995972| 1.389040231704712| 0.7109596133232117|-0.09363111853599548|2.1730761528015137| 1.681441307067871|  1.132681965827942|  1.7076655626296997|2.214872121810913|0.3891768753528595|  1.4611220359802246|-0.6753126978874207|              0.0|0.3770376741886139|  0.4209478795528412|  -1.344264030456543|              0.0|0.34207355976104736| 0.678452730178833|0.9832690358161926|0.8820441961288452|2.3022947311401367| 1.161749005317688| 0.853072464466095|
+|1.0| 1.043517827987671| 0.5385505557060242|   0.490913987159729|0.2128576636314392|-0.5377002358436584|0.9015982151031494|-0.3139283359050751|  0.8788458108901978|2.1730761528015137|1.1658663749694824| 1.6358535289764404| -1.1697872877120972|              0.0|0.6768446564674377|  0.2268248200416565| -0.942695140838623|              0.0|1.0018638372421265| 0.10447503626346588|-0.24109593033790588|3.101961374282837| 1.0989973545074463|0.9835978150367737|0.9918787479400635|1.0334051847457886|0.8807275891304016|1.1293253898620605|0.9559017419815063|
+|1.0|1.3848297595977783|-0.8376673460006714| -1.6254324913024902|0.7936571836471558|-0.5551074147224426|2.1771371364593506|-0.7585415244102478|    -0.6280517578125|               0.0|2.3959436416625977|-0.1932430863380432|  0.8271507620811462|2.214872121810913|0.8902245163917542|  1.6841329336166382|0.08367057889699936|              0.0| 1.669772982597351| 0.08365445584058762|   1.534170389175415|              0.0|  1.860614538192749|1.5258980989456177|1.1941914558410645| 1.523937463760376|0.8941512107849121|1.2595372200012207|1.2395110130310059|
+|1.0|0.8394626975059509| 1.0917649269104004|  0.8382571339607239|0.9600422382354736| -1.396132469177246|0.5707129836082458|   0.71194988489151| -0.9274144172668457|1.0865380764007568|0.6893216371536255| 1.0132030248641968|0.062040429562330246|2.214872121810913|0.3733709752559662| -0.8327046632766724|-1.1252031326293945|              0.0|1.1128575801849365|  1.6277086734771729|   0.929871141910553|              0.0|  1.564579725265503|1.0513596534729004| 1.124411702156067|0.7787973880767822|0.7338785529136658|0.7587698698043823|0.7088266611099243|
++---+------------------+-------------------+--------------------+------------------+-------------------+------------------+-------------------+--------------------+------------------+------------------+-------------------+--------------------+-----------------+------------------+--------------------+-------------------+-----------------+------------------+--------------------+--------------------+-----------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+only showing top 10 rows
+
+root
+ |-- _c0: double (nullable = true)
+ |-- _c1: double (nullable = true)
+ |-- _c2: double (nullable = true)
+ |-- _c3: double (nullable = true)
+ |-- _c4: double (nullable = true)
+ |-- _c5: double (nullable = true)
+ |-- _c6: double (nullable = true)
+ |-- _c7: double (nullable = true)
+ |-- _c8: double (nullable = true)
+ |-- _c9: double (nullable = true)
+ |-- _c10: double (nullable = true)
+ |-- _c11: double (nullable = true)
+ |-- _c12: double (nullable = true)
+ |-- _c13: double (nullable = true)
+ |-- _c14: double (nullable = true)
+ |-- _c15: double (nullable = true)
+ |-- _c16: double (nullable = true)
+ |-- _c17: double (nullable = true)
+ |-- _c18: double (nullable = true)
+ |-- _c19: double (nullable = true)
+ |-- _c20: double (nullable = true)
+ |-- _c21: double (nullable = true)
+ |-- _c22: double (nullable = true)
+ |-- _c23: double (nullable = true)
+ |-- _c24: double (nullable = true)
+ |-- _c25: double (nullable = true)
+ |-- _c26: double (nullable = true)
+ |-- _c27: double (nullable = true)
+ |-- _c28: double (nullable = true)
+
+There are 3945 rows in the training set, and 3957 in the test set
++--------------------+---+
+|            features|_c0|
++--------------------+---+
+|[0.50565409660339...|1.0|
+|[1.15112721920013...|1.0|
+|[0.84678310155868...|1.0|
+|[1.55155110359191...|1.0|
+|[0.41030639410018...|1.0|
++--------------------+---+
+only showing top 5 rows
+
+23/05/04 08:44:54 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+23/05/04 08:44:54 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.ForeignLinkerBLAS
+23/05/04 08:47:38 WARN DAGScheduler: Broadcasting large task binary with size 1004.8 KiB
+23/05/04 08:47:39 WARN DAGScheduler: Broadcasting large task binary with size 1044.6 KiB
+23/05/04 08:47:40 WARN DAGScheduler: Broadcasting large task binary with size 1034.8 KiB
+23/05/04 08:47:41 WARN DAGScheduler: Broadcasting large task binary with size 1035.3 KiB
+23/05/04 08:47:41 WARN DAGScheduler: Broadcasting large task binary with size 1036.0 KiB
+23/05/04 08:47:42 WARN DAGScheduler: Broadcasting large task binary with size 1037.0 KiB
+23/05/04 08:47:42 WARN DAGScheduler: Broadcasting large task binary with size 1039.2 KiB
+23/05/04 08:47:43 WARN DAGScheduler: Broadcasting large task binary with size 1043.7 KiB
+23/05/04 08:47:43 WARN DAGScheduler: Broadcasting large task binary with size 1052.6 KiB
+23/05/04 09:00:07 WARN DAGScheduler: Broadcasting large task binary with size 2.7 MiB
+23/05/04 09:56:10 WARN DAGScheduler: Broadcasting large task binary with size 1433.6 KiB
+23/05/04 09:58:15 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+
+The 0.01 data Accuracy for best rf model = 0.646702
+{
+    "bootstrap": true,
+    "cacheNodeIds": false,
+    "checkpointInterval": 10,
+    "featureSubsetStrategy": "auto",
+    "featuresCol": "features",
+    "impurity": "gini",
+    "labelCol": "_c0",
+    "leafCol": "",
+    "maxBins": 20,
+    "maxDepth": 5,
+    "maxMemoryInMB": 256,
+    "minInfoGain": 0.0,
+    "minInstancesPerNode": 1,
+    "minWeightFractionPerNode": 0.0,
+    "numTrees": 20,
+    "predictionCol": "prediction",
+    "probabilityCol": "probability",
+    "rawPredictionCol": "rawPrediction",
+    "seed": 42,
+    "subsamplingRate": 1.0
+}
+
+The 0.01 data AUC-ROC: 0.6324403901225595
+{
+    "cacheNodeIds": false,
+    "checkpointInterval": 10,
+    "featureSubsetStrategy": "all",
+    "featuresCol": "features",
+    "impurity": "variance",
+    "labelCol": "_c0",
+    "leafCol": "",
+    "lossType": "logistic",
+    "maxBins": 32,
+    "maxDepth": 1,
+    "maxIter": 30,
+    "maxMemoryInMB": 256,
+    "minInfoGain": 0.0,
+    "minInstancesPerNode": 1,
+    "minWeightFractionPerNode": 0.0,
+    "predictionCol": "prediction",
+    "probabilityCol": "probability",
+    "rawPredictionCol": "rawPrediction",
+    "seed": 3504127614838123891,
+    "stepSize": 0.1,
+    "subsamplingRate": 1.0,
+    "validationTol": 0.01
+}
+
+only showing top 5 rows
+
++--------------------+---+
+|            features|_c0|
++--------------------+---+
+|[1.17656552791595...|1.0|
+|[1.04791009426116...|1.0|
+|[1.01441943645477...|1.0|
+|[1.47743248939514...|1.0|
+|[0.70879423618316...|1.0|
++--------------------+---+
+only showing top 5 rows
+
+choose the best parameter to finish the rf model
+The ALL data Accuracy for best rf model = 0.671066 
+choose the best parameter to finish the gbt model
+23/05/04 21:56:37 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+23/05/04 21:56:37 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.ForeignLinkerBLAS
+The ALL data AUC-ROC: 0.6403718329486673
